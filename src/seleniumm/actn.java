@@ -19,13 +19,15 @@ public class actn {
 		System.setProperty("Webdriver.chrome.driver", "C:\\Users\\DELL\\eclipse-workspace\\browser\\chromedriver-win64");
 		WebDriver driver = new ChromeDriver();
 		
-		driver.get("https://www.ebay.com");
+		/*driver.get("https://www.ebay.com");
 		Actions a = new Actions(driver);
 		a.moveToElement(driver.findElement(By.id("gh-ac"))).click().sendKeys("name").build().perform();
 		a.moveToElement(driver.findElement(By.id("gh-ac"))).click().keyDown(Keys.SHIFT).sendKeys("mobile").doubleClick().contextClick().build().perform();
-	
+	*/
 		//driver.get("https://www.amazon.in/");// for action code
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+        driver.manage().window().maximize(); // Maximizes the browser window
+
 	//	Actions a =new Actions (driver);
 		//a.moveToElement(driver.findElement(By.id("nav-link-accountList-nav-line-1"))).build().perform();
 		
